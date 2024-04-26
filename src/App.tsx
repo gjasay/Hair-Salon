@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
 
 // Import components
 import Header from './components/Header';
@@ -9,11 +8,15 @@ import Booking from './components/Booking';
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/schedule-appointment" element={<Booking />} />
-        </Routes>
+      <div className="flex flex-col h-screen">
+        <Header />
+        <div className="flex-grow overflow-auto">
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/schedule-appointment" element={<Booking />} />
+          </Routes>
+        </div>
+      </div>
     </BrowserRouter>
   );
 }
