@@ -1,7 +1,5 @@
-const Booking = () => {
-  return (
-    <div>Booking</div>
-  )
-}
+const Booking: React.FC = () => {
+  return <div>Book your appointment now!</div>;
+};
 
-export default Booking
+export default Booking;

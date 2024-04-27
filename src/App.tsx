@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Import components
-import Header from './components/Header';
-import Landing from './components/Landing';
-import Booking from './components/Booking';
+import Header from "./components/Header";
+import Landing from "./components/Landing";
+import Booking from "./components/Booking";
 
 const App = () => {
   return (
@@ -19,6 +19,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
